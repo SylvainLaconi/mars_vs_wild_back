@@ -70,7 +70,7 @@ app.post("/api/games", (req, res) => {
 app.delete("/api/games/:id", (req, res) => {
   const gamesId = req.params.id;
   connection.query(
-    "DELETE FROM games WHERE id = ?",
+    "DELETE FROM games WHERE idgames = ?",
     [gamesId],
     (err, result) => {
       err
@@ -83,11 +83,18 @@ app.delete("/api/games/:id", (req, res) => {
 //Route POST pour ajouter un nouveau player
 
 app.post("/api/players", (req, res) => {
-  const { name, species, planet, image, description, team, games_idgames } =
-    req.body;
+  const {
+    name,
+    species,
+    planet,
+    photo,
+    player_description,
+    team,
+    games_idgames,
+  } = req.body;
   connection.query(
-    "INSERT INTO players (name, species, planet, image, description, team, games_idgames) VALUES (?, ?, ?, ?, ?, ?, ?)",
-    [name, species, planet, image, description, team, games_idgames],
+    "INSERT INTO players (name, species, planet, photo, player_description, team, games_idgames) VALUES (?, ?, ?, ?, ?, ?, ?)",
+    [name, species, planet, photo, player_description, team, games_idgames],
     (err, result) => {
       if (err) {
         res.status(500).send("Error registering player");
