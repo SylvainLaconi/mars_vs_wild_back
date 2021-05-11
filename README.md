@@ -5,7 +5,7 @@
 
 ## How to install mars_vs_wild DB ?
 use this command in mysql : 
-```mysql > source Databases.sql;```
+```mysql > source /path/to/Databases.sql;```
 
 ## How to parameter connection to DB ?
 create a ```.env```file
@@ -24,10 +24,10 @@ DB_NAME=mars_vs_wild
 
 ## API documentation
 
-- Route pour GET/POST/DELETE un game ```/api/games```
-- Route pour GET les détails d'un game ```/api/games/:id```
-- Route pour GET/POST/DELETE un player ```/api/players```
-- Route pour GET tous les players d'un game ```/api/players/:id```
+Route pour GET/POST/DELETE un game ```/api/games```
+Route pour GET les détails d'un game ```/api/games/:id```
+Route pour GET/POST/DELETE un player ```/api/players```
+Route pour GET tous les players d'un game ```/api/players/:id```
 
 
 
