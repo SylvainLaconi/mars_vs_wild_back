@@ -16,4 +16,5 @@ into the file, copy and complete :
 DB_PORT=3306
 DB_USER=your_username
 DB_PASSWORD=your_password
-DB_NAME=mars_vs_wild```
+DB_NAME=mars_vs_wild
+```
