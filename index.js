@@ -2,7 +2,7 @@ const express = require("express");
 const app = express(); // donne accès à la librairie express
 const connection = require("./db-config");
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8001;
 
 app.use(express.json());
 
