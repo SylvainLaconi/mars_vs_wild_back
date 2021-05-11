@@ -1,3 +1,5 @@
+# mars_vs_wild_back
+
 ## mars_vs_wild_back
 
 ###### Install dependancies
@@ -18,3 +20,4 @@ DB_USER=your_username
 DB_PASSWORD=your_password
 DB_NAME=mars_vs_wild
 ```
+
